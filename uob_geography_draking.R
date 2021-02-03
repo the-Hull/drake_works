@@ -5,6 +5,7 @@
 # install.packages("usethis")
 # install.packages("purrr")
 # install.packages("drake")
+# and some others (see R/packages.R)
 
 folders <- c("R", "analysis/data-raw", "analysis/scripts")
 

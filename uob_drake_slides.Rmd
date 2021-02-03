@@ -162,15 +162,10 @@ $\rightarrow$ load plan targets into curren `R` session env.
 - `drake::file_in()`, `file_out()`, `knitr_in()`   
 $\rightarrow$ for `drake` to track dependencies of external files 
 
-## Slide with R Output
+## Questions?
 
-```{r cars, echo = TRUE}
-summary(cars)
-```
 
-## Slide with Plot
 
-```{r pressure}
-plot(pressure)
-```
+## Live demo
+
 

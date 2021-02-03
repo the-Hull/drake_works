@@ -29,8 +29,6 @@ download_daymet_data <- function(sites_df, start, end, ...){
 
     return(downloaded_data)
 
-
-
 }
 
 
@@ -64,7 +62,6 @@ clean_data <- function(dframe){
 #' @return ggplot object
 #' @export
 #'
-#' @examples
 plot_daymet_figures <- function(dframe, msmt){
 
     plot_df <- dframe %>%
@@ -80,6 +77,15 @@ plot_daymet_figures <- function(dframe, msmt){
 }
 
 
+#' Make trend plots
+#'
+#' @details Ideally, data generation and plotting should be separated
+#'
+#' @param dframe data.frame of daymet downloads
+#'
+#' @return ggplot object
+#' @export
+#'
 plot_daymet_june_temp_models <- function(dframe){
 
 
@@ -97,7 +103,7 @@ plot_daymet_june_temp_models <- function(dframe){
         geom_point() +
         geom_smooth(method = "lm") +
         theme_bw() +
-        labs(title = "Trendyyy!")
+        labs(title = "Trend!")
 
 
 }
